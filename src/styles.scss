@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(../src/assets/xmen1.webp);
+  background-color: transparent;
+
+}
+form {
+  margin: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.1;
+  color: #f9f9f9;
+  text-align: center;
+}
+
+label {
+  font-weight: bold;
+  color: aliceblue;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
