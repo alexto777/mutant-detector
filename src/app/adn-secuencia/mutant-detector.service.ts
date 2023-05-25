@@ -4,6 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class MutantDetectorService {
+  /** Función devuelve si el ADN ingresado es mutante o no */
   isMutant(adn: string[]): boolean {
     const n = adn.length;
     const targetSequences = ['AAAA', 'TTTT', 'CCCC', 'GGGG'];

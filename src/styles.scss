@@ -3,7 +3,8 @@ body {
   font-family: Arial, sans-serif;
   background-image: url(../src/assets/xmen1.webp);
   background-color: transparent;
-
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 form {
   margin: 20px;
@@ -23,7 +24,6 @@ label {
 
 textarea {
   width: 100%;
-  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: vertical;

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MutantDetectorService } from './mutant-detector.service';
 
 @Component({
   selector: 'app-adn-secuencia',
@@ -6,6 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./adn-secuencia.component.scss'],
 })
 export class AdnSecuenciaComponent {
+  constructor(private mutantDetector: MutantDetectorService) {}
+
   adn: string = '';
 
   detectMutant() {
@@ -18,6 +21,6 @@ export class AdnSecuenciaComponent {
   }
 
   isMutant(adn: string[]): any {
-    // Implementa aquí el algoritmo para detectar si el ADN es mutante
+    return true;
   }
 }

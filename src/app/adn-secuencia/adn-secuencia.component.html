@@ -1,7 +1,14 @@
 <h1>Detector de Mutantes</h1>
 
 <form (ngSubmit)="detectMutant()">
-  <label>ADN:</label>
-  <textarea [(ngModel)]="adn" rows="6" cols="30"></textarea>
+  <label>Ingresar la secuencia de ADN:</label>
+  <label>Debes ingresar la secuencia en cada fila.</label>
+  <textarea
+    [(ngModel)]="adn"
+    rows="6"
+    cols="30"
+    [ngModelOptions]="{ standalone: true }"
+    placeholder="ATGC"
+  ></textarea>
   <button type="submit">Detectar Mutante</button>
 </form>
